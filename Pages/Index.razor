@@ -1,0 +1,36 @@
+@page "/"
+@using Microsoft.AspNetCore.Components.Web
+
+<PageTitle>Hello World - InfiniteV2</PageTitle>
+
+<div class="hero-container">
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <span class="gradient-text">Hello, World!</span>
+        </h1>
+        <p class="hero-subtitle">Welcome to InfiniteV2</p>
+        <p class="hero-description">
+            Your Blazor application is up and running! 🚀
+        </p>
+        <div class="hero-actions">
+            <button class="btn-primary" @onclick="ShowMessage">
+                Click Me!
+            </button>
+        </div>
+        @if (!string.IsNullOrEmpty(message))
+        {
+            <div class="message-box">
+                <p>@message</p>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private string message = string.Empty;
+
+    private void ShowMessage()
+    {
+        message = $"Hello from Blazor! Current time: {DateTime.Now:HH:mm:ss}";
+    }
+}
