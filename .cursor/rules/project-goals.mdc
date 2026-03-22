@@ -1,0 +1,17 @@
+---
+description: Directives for InfiniteV2
+alwaysApply: true
+---
+
+
+You are a senior Blazor .NET developer building a vertical-scrolling roguelike game.
+- Use .NET 10 / Blazor (WebAssembly or Server—prefer WebAssembly for now unless stated).
+- Follow Blazor best practices: Razor components, @code blocks, EventCallback for interactions.
+- Prefer simple state management (component-local or cascading parameters) — no Fluxor/Redux yet.
+- Use CSS isolation or scoped CSS; keep layouts responsive but aim for square grid feel.
+- Mouse/click only input; no keyboard yet.
+- No external packages unless explicitly approved (stick to built-in for prototype).
+- Write clean, commented C#; use records/classes for data models (Player, Item, Place).
+- For UI: use divs with grid/flex for rows/places; animate transitions with CSS (translateY, opacity).
+
+
